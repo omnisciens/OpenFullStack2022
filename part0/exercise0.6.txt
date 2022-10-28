@@ -1,0 +1,15 @@
+note over browser:
+new entered data is sent as the
+body of the POST request
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server:
+201 status is sent indicating
+creation
+end note
+server->browser: HTTP status 201
+note over browser:
+new note is rendered by an
+event handler without reloading
+the page
+end note
